@@ -1,0 +1,315 @@
+<!<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran Alvin Store</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: gantiWarna 5s infinite alternate;
+        }
+        
+        .metode-pembayaran {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .metode-pembayaran:hover {
+            transform: scale(1.02);
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin: 10px auto;
+            display: block;
+        }
+        
+        .nomor {
+            font-size: 1.2rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 15px 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .judul-metode {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+        
+        .petunjuk {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+        
+        @keyframes gantiWarna {
+            0% { color: #ff00ff; }
+            20% { color: #00ffff; }
+            40% { color: #ffff00; }
+            60% { color: #ff6600; }
+            80% { color: #00ff00; }
+            100% { color: #ff0000; }
+        }
+        
+        .efek-kelap {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .bintang {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: berkedip 2s infinite alternate;
+        }
+        
+        @keyframes berkedip {
+            0% { opacity: 0.1; }
+            100% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+    <div class="efek-kelap" id="efekKelap"></div>
+    
+    <div class="container">
+        <h1>ALVIN STORE</h1>
+        
+        <div class="metode-pembayaran">
+            <div class="judul-metode">Transfer via DANA</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_DANA.svg" alt="Logo DANA" class="logo">
+            <div class="nomor">083160893032</div>
+            <p>Scan QR code atau transfer manual ke nomor DANA di atas</p>
+        </div>
+        
+        <div class="metode-pembayaran">
+            <div class="judul-metode">Transfer via GOPAY</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="Logo GOPAY" class="logo">
+            <div class="nomor">083199029853</div>
+            <p>Scan QR code atau transfer manual ke nomor GOPAY di atas</p>
+        </div>
+        
+        <div class="petunjuk">
+            <p>Setelah melakukan pembayaran, harap konfirmasi ke admin dengan mengirim bukti transfer</p>
+            <p>Terima kasih telah berbelanja di Alvin Store!</p>
+        </div>
+    </div>
+    
+    <script>
+        // Membuat efek bintang berkelap-kelip
+        const efekKelap = document.getElementById('efekKelap');
+        
+        for (let i = 0; i < 50; i++) {
+            const bintang = document.createElement('div');
+            bintang.classList.add('bintang');
+            
+            // Random posisi dan ukuran
+            const size = Math.random() * 3 + 1;
+            bintang.style.width = `${size}px`;
+            bintang.style.height = `${size}px`;
+            bintang.style.left = `${Math.random() * 100}%`;
+            bintang.style.top = `${Math.random() * 100}%`;
+            
+            // Random delay animasi
+            bintang.style.animationDelay = `${Math.random() * 2}s`;
+            
+            efekKelap.appendChild(bintang);
+        }
+    </script>
+</body>
+</html> html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran Alvin Store</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: gantiWarna 5s infinite alternate;
+        }
+        
+        .metode-pembayaran {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .metode-pembayaran:hover {
+            transform: scale(1.02);
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin: 10px auto;
+            display: block;
+        }
+        
+        .nomor {
+            font-size: 1.2rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 15px 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .judul-metode {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+        
+        .petunjuk {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+        
+        @keyframes gantiWarna {
+            0% { color: #ff00ff; }
+            20% { color: #00ffff; }
+            40% { color: #ffff00; }
+            60% { color: #ff6600; }
+            80% { color: #00ff00; }
+            100% { color: #ff0000; }
+        }
+        
+        .efek-kelap {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .bintang {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: berkedip 2s infinite alternate;
+        }
+        
+        @keyframes berkedip {
+            0% { opacity: 0.1; }
+            100% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+    <div class="efek-kelap" id="efekKelap"></div>
+    
+    <div class="container">
+        <h1>ALVIN STORE</h1>
+        
+        <div class="metode-pembayaran">
+            <div class="judul-metode">Transfer via DANA</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_DANA.svg" alt="Logo DANA" class="logo">
+            <div class="nomor">083160893032</div>
+            <p>Scan QR code atau transfer manual ke nomor DANA di atas</p>
+        </div>
+        
+        <div class="metode-pembayaran">
+            <div class="judul-metode">Transfer via GOPAY</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="Logo GOPAY" class="logo">
+            <div class="nomor">083199029853</div>
+            <p>Scan QR code atau transfer manual ke nomor GOPAY di atas</p>
+        </div>
+        
+        <div class="petunjuk">
+            <p>Setelah melakukan pembayaran, harap konfirmasi ke admin dengan mengirim bukti transfer</p>
+            <p>Terima kasih telah berbelanja di Alvin Store!</p>
+        </div>
+    </div>
+    
+    <script>
+        // Membuat efek bintang berkelap-kelip
+        const efekKelap = document.getElementById('efekKelap');
+        
+        for (let i = 0; i < 50; i++) {
+            const bintang = document.createElement('div');
+            bintang.classList.add('bintang');
+            
+            // Random posisi dan ukuran
+            const size = Math.random() * 3 + 1;
+            bintang.style.width = `${size}px`;
+            bintang.style.height = `${size}px`;
+            bintang.style.left = `${Math.random() * 100}%`;
+            bintang.style.top = `${Math.random() * 100}%`;
+            
+            // Random delay animasi
+            bintang.style.animationDelay = `${Math.random() * 2}s`;
+            
+            efekKelap.appendChild(bintang);
+        }
+    </script>
+</body>
+</html>
